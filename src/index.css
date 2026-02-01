@@ -1,0 +1,534 @@
+@import "tailwindcss";
+
+body{
+  background-color: white;
+}
+
+.reg-text{
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.img{
+  height: 2rem;
+  width: 2rem;
+  background: transparent;
+}
+
+.footer-btn {
+  --bg: #080808;
+  --radius: 40px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  transition: all 0.2s ease;
+  box-shadow:
+    inset 0 2px 6px rgba(255, 255, 255, 0.25),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.6),
+    0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.footer-btn .wrap {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 18px;
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-btn .wrap p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.footer-btn .wrap p span:nth-child(2) {
+  display: none;
+}
+
+.footer-btn:hover .wrap p span:nth-child(1) {
+  display: none;
+}
+
+.footer-btn:hover .wrap p span:nth-child(2) {
+  display: inline-block;
+}
+
+.footer-btn:hover .wrap p {
+  transform: translateY(-2px);
+}
+
+.footer-btn:active {
+  transform: translateY(2px);
+}
+
+
+
+/* From Uiverse.io by Kabak */ 
+.btn {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.btn:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 10;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.Bg {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover .Bg {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn-1 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0077b5;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn-1:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn-1:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(190, 190, 190, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+
+
+
+/* From Uiverse.io by MUJTABA201566 */ 
+.Btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: white;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: black;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+
+/* hover effect on button width */
+.Btn1:hover {
+  background-color: black;
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 1s;
+}
+
+.Btn1:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+
+.Btn1:hover .sign svg path {
+  fill: white;
+}
+
+/* hover effect button's text */
+.Btn1:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 1s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn1:active {
+  transform: translate(2px, 2px);
+}
+
+.button2 {
+  --main-focus: #2d8cf0;
+  --font-color: #dedede;
+  --bg-color-sub: #222;
+  --bg-color: #323232;
+  --main-color: #dedede;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.button2, .button2__icon, .button2__text {
+  transition: all 0.6s;
+}
+
+.button2 .button2__text {
+  transform: translateX(8px);
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+.button2 .button2__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.button2 .svg {
+  width: 20px;
+  stroke: var(--main-color);
+}
+
+.button2:hover {
+  background: var(--bg-color);
+}
+
+.button2:hover .button2__text {
+  color: transparent;
+}
+
+.button2:hover .button2__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button2:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+
+
+.create-btn {
+  color: #090909;
+  padding: 0.5em 0.4em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #cac0c0;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 6px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.create-btn:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+.reg-btn {
+ border: none;
+ position: relative;
+ width: 200px;
+ height: 73px;
+ padding: 0;
+ z-index: 2;
+ -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+ mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+ mask-size: 100%;
+ cursor: pointer;
+ background-color: transparent;
+ transform: translateY(8px)
+}
+
+.reg-btn:after {
+ content: '';
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ box-shadow: 0px 0 0 0 white;
+ transition: all 2s ease;
+}
+
+.reg-btn:hover:after {
+ box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.reg-btn span {
+ position: absolute;
+ width: 100%;
+ font-size: 15px;
+ font-weight: 500;
+ left: 50%;
+ top: 39%;
+ letter-spacing: 3px;
+ text-align: center;
+ transform: translate(-50%,-50%);
+ color: black;
+ transition: all 2s ease;
+}
+
+.reg-btn:hover span {
+ color: white;
+ font: 800;
+}
+
+.reg-btn:before {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 100%;
+ background-color: black;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ transition: all 1s ease;
+}
+
+.reg-btn:hover:before {
+ width: 100%;
+}
+
+.expense::-webkit-scrollbar{
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.styled-button {
+  position: relative;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #171717, #242424);
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1),
+              0 8px 16px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid #292929;
+}
+
+.styled-button::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(to bottom, #2a2a2a, #000000);
+  z-index: -1;
+  border-radius: 9999px;
+}
+
+.styled-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 1),
+              0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.inner-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #1a1a1a, #262626);
+  border: 1px solid #303030;
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.styled-button:hover .inner-button {
+  transform: translateX(-2px);
+}
+
+.icon {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+}
+
+.styled-button:hover .icon {
+  transform: rotate(0deg);
+}
+
+.btn-text {
+  letter-spacing: 0.5px;
+}
