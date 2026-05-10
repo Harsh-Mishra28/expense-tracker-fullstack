@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import MainLayout from './components/MainLayout'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Register from './components/Register'
-import About from './components/About'
 
 
+
+import { Toaster } from 'react-hot-toast'
 
 function App() {
 
@@ -19,13 +20,15 @@ function App() {
   
   
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Register setFirstName={setfirstName} />} />
-        <Route path="/dashboard" element={<MainLayout firstName={firstName} setfirstName={setfirstName} />} />
-        <Route path='/ContactMe' element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Register setFirstName={setfirstName} />} />
+          <Route path="/dashboard" element={<MainLayout firstName={firstName} setfirstName={setfirstName} />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
