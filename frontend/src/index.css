@@ -69,8 +69,6 @@ body{
   transform: translateY(2px);
 }
 
-
-
 /* From Uiverse.io by Kabak */ 
 .btn {
   height: 50px;
@@ -113,8 +111,6 @@ body{
   -webkit-transition: 100ms;
   transition: 100ms;
 }
-
-
 
 /* From Uiverse.io by vinodjangid07 */ 
 .Btn {
@@ -168,7 +164,6 @@ body{
   background-color: rgba(156, 156, 156, 0.466);
   backdrop-filter: blur(4px);
 }
-
 
 /* From Uiverse.io by vinodjangid07 */ 
 .Btn-1 {
@@ -224,10 +219,6 @@ body{
   backdrop-filter: blur(4px);
 }
 
-
-
-
-
 /* From Uiverse.io by MUJTABA201566 */ 
 .Btn1 {
   display: flex;
@@ -272,7 +263,6 @@ body{
   font-weight: 600;
   transition-duration: 0.3s;
 }
-
 
 /* hover effect on button width */
 .Btn1:hover {
@@ -370,7 +360,6 @@ body{
   box-shadow: 0px 0px var(--main-color);
 }
 
-
 .create-btn {
   color: #090909;
   padding: 0.5em 0.4em;
@@ -387,7 +376,6 @@ body{
   color: #666;
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
-
 
 /* From Uiverse.io by barisdogansutcu */ 
 .reg-btn {
@@ -468,7 +456,6 @@ body{
     transform: translateY(0);
   }
 }
-
 
 .styled-button {
   position: relative;

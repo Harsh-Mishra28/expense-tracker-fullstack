@@ -172,8 +172,3 @@ const Inputform = ({ setFirstName }) => {
 };
 
 export default Inputform;
-
-
-
-
-

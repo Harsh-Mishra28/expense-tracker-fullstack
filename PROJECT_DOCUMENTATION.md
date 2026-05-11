@@ -15,9 +15,26 @@ The project is a full-stack financial tracking system designed to help users mon
 5.  **Analytics**: Users toggle advanced visual charts to see category-wise breakdowns.
 6.  **Data Portability**: Users can export their entire financial history to a CSV file for backup or external reporting.
 
+## 2. Project Structure
+The repository is organized into a clear decoupled architecture:
+
+```text
+Expense-Tracker/
+├── frontend/               # React (Vite) application
+│   ├── src/                # UI components and business logic
+│   ├── public/             # Static assets
+│   ├── package.json        # Frontend dependencies
+│   └── .env                # Environment variables
+├── backend/                # Spring Boot application
+│   ├── src/                # Java source code (Controller, Entity, Repository)
+│   ├── pom.xml             # Maven dependencies
+│   └── application.properties # Database configuration
+└── README.md               # Main project overview
+```
+
 ---
 
-## 2. Technical Architecture (The Code Flow)
+## 3. Technical Architecture (The Code Flow)
 The application follows a standard **Three-Tier Architecture**:
 
 ### [UI Layer] → [Logic Layer] → [Data Layer]

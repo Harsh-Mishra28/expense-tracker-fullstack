@@ -3,8 +3,6 @@ import MainLayout from './components/MainLayout'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Register from './components/Register'
 
-
-
 import { Toaster } from 'react-hot-toast'
 
 function App() {
