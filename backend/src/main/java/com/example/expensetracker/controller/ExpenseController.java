@@ -1,7 +1,7 @@
 package com.example.expensetracker.controller;
 
 import com.example.expensetracker.entity.Expense;
-import com.example.expensetracker.repository.ExpenseRepository;
+import com.example.expensetracker.service.ExpenseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,35 +10,38 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/expenses")
-@CrossOrigin(origins = "*") // For local development, allow all
+@CrossOrigin(origins = "*") 
 public class ExpenseController {
 
+    private final ExpenseService expenseService;
+
     @Autowired
-    private ExpenseRepository expenseRepository;
+    public ExpenseController(ExpenseService expenseService) {
+        this.expenseService = expenseService;
+    }
 
     @GetMapping
     public List<Expense> getAllExpenses() {
-        return expenseRepository.findAll();
+        return expenseService.getAllExpenses();
     }
 
     @PostMapping
     public Expense createExpense(@RequestBody Expense expense) {
-        return expenseRepository.save(expense);
+        return expenseService.createExpense(expense);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteExpense(@PathVariable Long id) {
-        return expenseRepository.findById(id)
-                .map(expense -> {
-                    expenseRepository.delete(expense);
-                    return ResponseEntity.ok().build();
-                })
-                .orElse(ResponseEntity.notFound().build());
+        if (expenseService.deleteExpense(id)) {
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @DeleteMapping("/clear-all")
     public ResponseEntity<?> clearAllExpenses() {
-        expenseRepository.deleteAll();
+        expenseService.clearAllExpenses();
         return ResponseEntity.ok().build();
     }
 }
