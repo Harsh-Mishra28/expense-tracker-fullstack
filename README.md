@@ -14,8 +14,8 @@ Expenser is a professional, full-stack web application designed to help users tr
 
 ### Backend (Spring Boot)
 *   **RESTful API**: Clean and documented API endpoints for expense management.
-*   **Secure Authentication**: JWT-based security for user data protection.
-*   **Persistent Storage**: MySQL database integration for reliable data handling.
+*   **Decoupled Controller Architecture**: Lightweight, high-performance REST services.
+*   **Persistent Storage**: Spring Data JPA integration with relational and embedded databases.
 *   **Environment Driven**: Configuration decoupled via environment variables.
 
 ## 🛠️ Tech Stack
@@ -27,10 +27,9 @@ Expenser is a professional, full-stack web application designed to help users tr
 *   Axios (API Communication)
 
 **Backend:**
-*   Java 21 / Spring Boot
-*   Spring Security (JWT)
-*   Spring Data JPA
-*   MySQL
+*   Java 21 / Spring Boot 3.4
+*   Spring Data JPA & Hibernate 6
+*   RESTful API Services
 
 ## 📁 Project Structure
 
